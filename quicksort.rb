@@ -9,11 +9,9 @@ def quicksort(array)
 		array.each do |x| 
 			if x < pivot
 				less.push(x)
-			end
-			if x == pivot
+			elsif x == pivot
 				equal.push(x)
-			end
-			if x > pivot
+			elsif x > pivot
 				greater.push(x)
 			end
 		end
